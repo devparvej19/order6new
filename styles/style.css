@@ -1,0 +1,479 @@
+@font-face {
+    font-family: "RecifeDisplayregular";
+    src: url("../font/recifeDisplay/RecifeDisplay-Regular.eot");
+    /* eot */
+    src: url("../font/recifeDisplay/RecifeDisplay-Regular.woff") format("woff"),
+        /* woff */
+        url("../font/recifeDisplay/RecifeDisplay-Regular.otf") format("opentype"),
+        /* otf */
+        url("../font/recifeDisplay/RecifeDisplay-Regular.svg#filename") format("svg");
+    /* svg */
+}
+
+@font-face {
+    font-family: "RecifeDisplaylight";
+    src: url("../font/recifeDisplay/RecifeDisplay-Light.eot");
+    /* eot */
+    src: url("../font/recifeDisplay/RecifeDisplay-Light.woff") format("woff"),
+        /* woff */
+        url("../font/recifeDisplay/RecifeDisplay-Light.otf") format("opentype"),
+        /* otf */
+        url("../font/recifeDisplay/RecifeDisplay-Light.svg#filename") format("svg");
+    /* svg */
+}
+
+@font-face {
+    font-family: "HKGrotesk";
+    src: url("../font/HKGrotesk/HKGrotesk-Regular.eot");
+    /* eot */
+    src: url("../font/HKGrotesk/HKGrotesk-Regular.woff") format("woff"),
+        /* woff */
+        url("../font/HKGrotesk/HKGrotesk-Regular.otf") format("opentype"),
+        /* otf */
+        url("../font/HKGrotesk/HKGrotesk-Regular.svg#filename") format("svg");
+    /* svg */
+}
+
+* {
+    font-family: 'HKGrotesk', monospace;
+    box-sizing: border-box;
+    text-rendering: optimizelegibility;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'RecifeDisplaylight';
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* ================================
+            Header style  
+====================================*/
+.section-container {
+    padding: 20px 10%;
+}
+
+.header .nav-link {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+.-hvr {
+    display: inline-block;
+    position: relative;
+}
+
+.-hvr:hover::before {
+    transform: scaleX(1);
+    transform-origin: left center;
+    transition-delay: 0.2s;
+}
+
+.-hvr::before {
+    bottom: 0px;
+    content: "";
+    height: 1px;
+    left: 0px;
+    position: absolute;
+    transform: scaleX(0);
+    transform-origin: right center;
+    width: 100%;
+    background: rgb(33, 33, 33);
+    transition: transform 0.3s ease-in-out 0s;
+}
+
+.btn-circle {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.btn-circle-white {
+    font-size: 3rem !important;
+    width: 70%;
+}
+
+.btn-circle:before {
+    content: "";
+    border: 1px solid #000;
+    left: 50%;
+    height: 2.4rem;
+    position: absolute;
+    width: 120%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    top: 50%;
+}
+
+.btn-circle-white:before {
+    height: 4rem;
+    border-color: #fff;
+}
+
+button:focus {
+    border: none !important;
+    outline: none;
+}
+
+.header .navbar-toggler {
+    box-shadow: none;
+}
+
+
+
+/* mobile menu */
+
+
+.overlay {
+    height: 100%;
+    display: none;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 1);
+    overflow-x: hidden;
+    transition: 1s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 5%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay-content a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 9rem !important;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    font-family: 'RecifeDisplaylight' !important;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #f1f1f1;
+}
+
+
+/*=======================
+     banner style  
+=========================*/
+.custom-container {
+    padding: 20px 20px 20px 20px;
+}
+
+.scroll-down .scroll-circle {
+    display: inline-block;
+    height: 6rem;
+    margin-bottom: 2rem;
+    width: 6rem;
+
+}
+
+.scroll-down .scroll-arrow {
+    display: inline-block;
+    height: 10rem;
+    stroke-width: 3;
+    width: 2.4rem;
+}
+
+.banner-title h1 {
+    font-size: 12vw;
+}
+
+.scroll-down .icon-circles {
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+}
+
+.scroll-circle .icon {
+    animation: rotate .5s linear infinite;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+
+.scroll-down .scroll-arrow {
+    display: inline-block;
+    height: 10rem;
+    stroke-width: 3;
+    width: 2.4rem;
+}
+
+.scroll-down {
+    margin-top: 20rem;
+}
+
+@keyframes rotate {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/*=======================
+     Commited style  
+=========================*/
+.read-more {
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+}
+
+.read-more .aria {
+    display: none;
+}
+
+.read-more .button {
+    align-items: center;
+    display: flex;
+}
+
+.read-more .circle {
+    display: block;
+    height: 6rem;
+    margin-right: 2rem;
+    position: relative;
+    width: 6rem;
+}
+
+.read-more .icon-circles {
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.read-more .icon {
+    transition: transform .5s ease-out;
+}
+
+.commited-title {
+    font-size: 3rem;
+}
+
+.commited-description p {
+    width: 100%;
+    font-size: 1.4rem;
+    line-height: 1.4;
+    padding: 4rem 0;
+}
+
+.hover-roteted .read-more {
+    transition: transform .5s ease-out;
+}
+
+.hover-roteted:hover .read-more {
+    transform: rotate(90deg);
+}
+
+.line {
+    background: #979797;
+    height: 2px;
+    width: 25.55vw;
+    border: none;
+    margin: 0 2rem;
+}
+
+.section-title {
+    font-size: 2rem;
+}
+
+.p {
+    font-size: 1.4rem;
+    line-height: 1.4;
+}
+
+/*=======================
+     project style  
+=========================*/
+
+.project {
+    position: relative;
+}
+
+
+.project a {
+    text-decoration: none;
+    font-size: 3rem;
+    color: #000;
+    overflow: hidden;
+    transition: ease .5s all;
+    display: block;
+    z-index: 2;
+    text-shadow: 3px 5px 10px rgba(255, 255, 255, 1);
+
+}
+
+.project:hover h1 {
+    color: #000 !important;
+}
+
+.project a:hover h1 {
+    transition: ease .5s all;
+    color: #ccc !important;
+}
+
+.project a:hover .follow-img {
+    opacity: 1;
+}
+
+.project .follow-img {
+    opacity: 0;
+    width: 100%;
+    height: 100vh;
+    max-width: 400px;
+    box-sizing: border-box;
+    transition: ease .2s;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    object-fit: cover;
+}
+
+/*=======================
+     connections style  
+=========================*/
+.connection-title {
+    font-size: 3rem;
+    line-height: 1;
+}
+
+.connection-description {
+    font-size: 1.4rem;
+    line-height: 1.4;
+    padding-right: 9.85vw;
+}
+
+.shot-services-title,
+.footer-title {
+    font-size: 1.4rem;
+    line-height: 1.4;
+
+}
+
+.service-title {
+    font-size: 6rem;
+    line-height: 1.4;
+
+}
+
+.projects-title2 {
+    display: none;
+}
+
+
+.hover-rotete:hover .read-more {
+    transform: rotate(90deg);
+}
+
+/*=======================
+     footer style  
+=========================*/
+.footer-title {
+    margin-bottom: 20rem;
+    margin-top: 10rem;
+}
+
+.get-in-touch h4 {
+    font-size: 10.8vw;
+    display: inline-block;
+    border-bottom: 3px solid #fff;
+    cursor: pointer;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+}
+
+.get-in-touch h4:hover,
+.footer-menu li a:hover {
+    color: #979797;
+}
+
+.footer-menu li a {
+    font-size: 1.4rem;
+    line-height: 1.4;
+}
+
+
+/*===================================================
+                    Work Page Style 
+=====================================================*/
+.project-item{
+    padding-bottom: 10rem;
+}
+.project-title {
+    font-size: 1.4rem;
+    line-height: 1.4;
+}
+
+.project-description {
+    font-size: 1.8rem;
+    line-height: 1.25;
+}
+
+.work-l-img {
+    overflow: hidden;
+    /* transition: transform .8s linear 1s; */
+}
+
+.work-l-img img {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.project-work .work-item:hover .work-l-img img {
+    transform: scale(1.045) rotate(1.2deg);
+    /* transform-origin: center; */
+    transition: all .8s;
+    transition-timing-function: linear;
+}
+
+
+
+
+.slide-in {
+    opacity: 0;
+    transition: all .8s;
+}
+
+.align-left.slide-in {
+    transform: translate(-30%) scale(0.95);
+}
+
+.align-right.slide-in {
+    transform: translate(30%) scale(0.95);
+}
+
+.slide-in.active {
+    opacity: 1;
+    transform: translate(0%) scale(1);
+}

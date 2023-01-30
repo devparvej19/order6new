@@ -1,0 +1,5 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 63 305" width="63"  height="305" >
+        <path class="arrow-line" style="stroke-dashoffset: 0px; stroke-dasharray: 304;" d="M31 0,31 304" stroke="#000000" fill="none" stroke-width="1.5px"></path>
+        <path class="arrow-left" style="stroke-dashoffset: 0px; stroke-dasharray: 51;" d="M1,269c0,0,29-1,30,35" stroke="#000000" fill="none" stroke-width="1.5px"></path>
+        <path class="arrow-right" style="stroke-dashoffset: 0px; stroke-dasharray: 51;" d="M61,269c0,0-29-1-30,35" stroke="#000000" fill="none" stroke-width="1.5px"></path>
+      </svg>

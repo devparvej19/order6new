@@ -1,0 +1,5 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" class="arrow-under" width="78"  height="16" ><defs><symbol id="arrow-right" viewBox="0 0 78 16" xml:space="preserve">
+    <title>Arrow - right</title>
+    <path style="" d="M0 8h77" stroke="#000000" fill="none" stroke-width="1.5px"></path><path style="" d="M68 15s-.3-6.8 9-7" stroke="#000000" fill="none" stroke-width="1.5px"></path><path style="" d="M68 1s-.3 6.8 9 7" stroke="#000000" fill="none" stroke-width="1.5px"></path></symbol></defs>
+          <use xlink:href="#arrow-right" stroke="#000000"></use>
+        </svg>

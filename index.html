@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Antara Studio - Home</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- favicons -->
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- custom css  -->
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+
+    <style>
+        
+
+/* Loader Styles start here */
+
+.loader {
+  display:block;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  z-index:1001;
+}
+
+
+.loader-wrapper .loader-section {
+  position:fixed;
+  top:0;
+  background:#000;
+  width:51%;
+  height:100%;
+  z-index:1000;
+}
+.loader-wrapper .loader-section.section-left {
+  left:0
+}
+.loader-wrapper .loader-section.section-right {
+  right:0;
+}
+/* Loaded Styles */ 
+.loaded .loader-wrapper .loader-section.section-left {
+  transform: translateX(-100%);
+  transition: all 0.9s 1s ;
+}
+.loaded .loader-wrapper .loader-section.section-right {
+  transform: translateX(100%);
+  transition: all 0.9s 1s ;
+}
+.loaded .loader {
+  opacity: 0;
+  transition: all 1s ease-out;
+}
+.loader p{
+    font-size: 2.8vw;
+    margin-bottom: -30px;
+    transform: translateY(20px) ;
+    opacity: 0;
+}
+.loaded .loader p{
+    transform: translateY(0px) ;
+    opacity: 1;
+}
+ @keyframes text-clip {
+	 from {
+		 clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+	}
+	 to {
+		 clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+	}
+}
+.loaded .loader-inner-text {
+	 display: inline-block;
+	 animation: inner-left 1s 1s ease both, text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+}
+    </style>
+</head>
+
+<body>
+    <div class="loader-wrapper">
+        <div class="loader text-white d-flex flex-column">
+            <div class="loader-inner-text">
+                <p class="">AN</p>
+                <br>
+            </div>
+            <div class="loader-inner-text">
+                <p class="ms-5 ps-5">TA</p>
+                <br>
+            </div>
+            <div class="loader-inner-text">
+                <p class="ms-5">RA</p>
+                <br>
+            
+            </div>
+            
+            
+            
+        </div>
+        <div class="loader-section section-left ">
+            
+        </div>
+        <div class="loader-section section-right"></div>
+    </div>
+    <header class="header">
+        <!-- place navbar here -->
+        <nav class="navbar section-container navbar-expand-md navbar-light">
+            <div class="container-fluid ">
+                <a class="navbar-brand" href="index.html"><img src="images/svg/svgexport-3.svg" class="img-fluid"
+                        alt="Antara"></a>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="btn-circle" onclick="openNav()">menu</span>
+                </button>
+
+                <div id="myNav" class="overlay w-100 w-md-0">
+                    <div class="d-flex align-items-center justify-content-between p-5">
+                        <a class="navbar-brand ms-3" href="#">
+                            <img src="images/svg/svgexport-1.svg" class="img-fluid" alt="Antara">
+                        </a>
+                        <a href="" class="d-flex align-items-center text-decoration-none" onclick="closeNav()">
+                            <p class="fs-2 my-4 text-white">Back</p>
+                            <img src="images/svg/svgexport-2.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="overlay-content px-5">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item ms-auto pe-4 mobile-nav-item">
+                                <a class="nav-link active text-white d-inline-block" aria-current="page"
+                                    href="index.html">Home</a>
+                                <span class="text-white fs-3">01.</span>
+                            </li>
+                            <li class="nav-item pe-4">
+                                <span class="text-white fs-3">02.</span>
+                                <a class="nav-link active text-white d-inline-block" aria-current="page"
+                                    href="work.html">WORK</a>
+                            </li>
+                            <li class="nav-item pe-4 me-auto">
+                                <a class="nav-link active text-white d-inline-block" aria-current="page"
+                                    href="service.html">SERVICES</a>
+                                <span class="text-white fs-3">03.</span>
+                            </li>
+                            <li class="nav-item pe-4 ">
+                                <span class="text-white fs-3">04.</span>
+                                <a class="nav-link active text-white d-inline-block" aria-current="page"
+                                    href="about.html">ABOUT</a>
+                            </li>
+                            <li class="nav-item pe-4">
+                                <a class="nav-link active text-white d-inline-block" aria-current="page"
+                                    href="contact">CONTACT</a>
+                                <span class="text-white fs-2">05.</span>
+                            </li>
+
+                        </ul>
+                        <button class="btn btn-circle-white btn-circle ms-4 text-white border-0 py-5" type="submit">GET
+                            IN
+                            TOUCH</button>
+                    </div>
+                </div>
+
+                <div class="collapse navbar-collapse main-hav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item pe-4">
+                            <a class="nav-link active -hvr" aria-current="page" href="work.html">WORK</a>
+
+                        </li>
+                        <li class="nav-item pe-4">
+                            <a class="nav-link active -hvr" aria-current="page" href="service.html">SERVICES</a>
+                        </li>
+                        <li class="nav-item pe-4 ">
+                            <a class="nav-link active -hvr" aria-current="page" href="about.html">ABOUT</a>
+                        </li>
+                        <li class="nav-item pe-4">
+                            <a class="nav-link active -hvr" aria-current="page" href="contact.html">CONTACT</a>
+                        </li>
+
+                    </ul>
+                    <button class="btn btn-circle ms-4" type="submit">GET IN TOUCH</button>
+                </div>
+            </div>
+        </nav>
+        <div class="custom-container banner d-flex align-items-center gap-0 gap-md-5 ">
+            <div class="banner-text">
+                <div class="d-flex align-items-center gap-5">
+                    <div class="banner-title">
+                        <h1>Where</h1>
+                    </div>
+                    <div class="right-simple-text d-none d-md-block">
+                        <p>Antara is an award-winning<br />
+                            design studio that shapes<br />
+                            ideas through clever and<br />
+                            simple design solutions with<br />
+                            functionality at its core.</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="banner-title">
+                        <h1>aesthetics and</h1>
+                        <h1>functionality</h1>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center gap-5">
+                    <div class="right-simple-text d-none d-md-block">
+                        <p>Antara is an award-winning<br />
+                            design studio that shapes<br />
+                            ideas through clever and<br />
+                            simple design solutions with<br />
+                            functionality at its core.</p>
+                    </div>
+                    <div class="banner-title ps-5 ms-5 ms-md-0 ps-md-0">
+                        <h1>meet</h1>
+                    </div>
+                </div>
+                <div class="d-block d-md-none py-5">
+                    <div class="right-simple-text " style="width: 60%;">
+                        <p class="fs-5">Antara is an award-winning
+                            design studio that shapes
+                            ideas through clever and
+                            simple design solutions with
+                            functionality at its core.</p>
+                    </div>
+                    <div class="right-simple-text" style="width: 60%;">
+                        <p class="fs-5">Antara is an award-winning
+                            design studio that shapes
+                            ideas through clever and
+                            simple design solutions with
+                            functionality at its core.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-down d-flex flex-column align-items-center">
+                <div class="scroll-circle position-relative"
+                    style="transform: translate(0px); opacity: 1; visibility: inherit;">
+                    <img src="images/svg/svgexport-4.svg" alt="" class="img-fluid icon-circles">
+                    <img src="images/svg/svgexport-5.svg" alt="" class="img-fluid scroll icon">
+                    
+                </div>
+                <div class="scroll-arrow ">
+
+                    <svg viewBox="0 0 63 305">
+                        <path class="arrow-line"
+                            style="fill: none; stroke: rgb(0, 0, 0); stroke-width: 1.5px; stroke-dashoffset: 0px; stroke-dasharray: 304px;"
+                            d="M31 0,31 304"></path>
+                        <path class="arrow-left"
+                            style="fill: none; stroke: rgb(0, 0, 0); stroke-width: 1.5px; stroke-dashoffset: 0px; stroke-dasharray: 51px;"
+                            d="M1,269c0,0,29-1,30,35"></path>
+                        <path class="arrow-right"
+                            style="fill: none; stroke: rgb(0, 0, 0); stroke-width: 1.5px; stroke-dashoffset: 0px; stroke-dasharray: 51px;"
+                            d="M61,269c0,0-29-1-30,35"></path>
+                    </svg>
+
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <main >
+        <!-- committed -->
+        <section class=" commited custom-container me-5 pe-5 ">
+            <h2 class="commited-title">We are committed to design memorable brands that tell engaging stories through
+                concept-driven design solutions</h2>
+            <div class="commited-description d-flex gap-5" style="max-width:896px;">
+                <p>Have you ever thought about what makes some brands stand
+                    out? It’s
+                    their definite sense of identity that connects perfectly with their target audience. </p>
+                <p>That’s why we help our clients define their unique
+                    identity and
+                    connect with their target audience in the most memorable way.</p>
+            </div>
+            <div class="hover-roteted d-flex gap-5 align-items-center">
+                <div class="cricle-read-more position-relative d-flex align-items-center justify-content-center">
+                    <img src="images/svg/svgexport-4.svg" alt="" class="position-absolute img-fluid">
+                    <img src="images/svg/Read more.svg" alt="" class="img-fluid read-more">
+
+                </div>
+                <div class="arrow-icon-left">
+                    <img src="images/svg/svgexport-8.svg" alt="" class="img-fluid">
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Selected press  -->
+        <section class="selected-press custom-container ">
+            <div class="d-flex gap-5 align-items-center">
+                <p class="section-title">Selected press</p>
+                <hr class="line">
+            </div>
+            <div class="brand d-flex align-content-center" style="max-width: 896px; padding: 15rem 8rem;">
+
+                <img src="images/logo-awwwards.png" alt="" class="img-fluid w-25 ">
+                <img src="images/logo-forbes.png" alt="" class="img-fluid w-25">
+                <img src="images/logo-lad.png" alt="" class="img-fluid w-25">
+                <img src="images/logo-transform.png" alt="" class="img-fluid w-25">
+            </div>
+        </section>
+
+        <!-- project work press  -->
+        <section class="project-work ">
+            <div class="custom-container d-flex gap-5 align-items-center">
+                <p class="section-title">Selected work</p>
+                <hr class="line">
+                <p class="section-title projects-title2">Projects</p>
+
+            </div>
+            <div class="project d-flex align-items-center justify-content-center pt-5 ">
+                <div class="">
+                    <a href="#" class="banner-title">
+                        <h1 class="text-center">Grana Coffee <span class=" fs-3">01.</span></h1>
+                        <img src="images/project1.jpg" alt="img-cover" class="follow-img">
+                    </a>
+                    <a href="#" class="banner-title">
+                        <h1 class="text-center"><span class=" fs-3">02.</span>Star Fades Intl</h1>
+                        <img src="images/project2.jpg" alt="img-cover" class="follow-img">
+                    </a>
+                    <a href="#" class="banner-title">
+                        <h1 class="text-center">Plutonic<span class=" fs-3">03.</span></h1>
+                        <img src="images/project3.jpg" alt="img-cover" class="follow-img">
+                    </a>
+                </div>
+            </div>
+            <div class="project d-flex align-items-center justify-content-center ">
+                <div class="">
+                    <a href="#" class="banner-title">
+                        <h1 class="text-center"><span class=" fs-3">04.</span>FitFreedom</h1>
+                        <img src="images/project4.jpg" alt="img-cover" class="follow-img">
+                    </a>
+                    <a href="#" class="banner-title">
+                        <h1 class="text-center">San Cayetano<span class=" fs-3">05.</span></h1>
+                        <img src="images/project5.jpg" alt="img-cover" class="follow-img">
+                    </a>
+                    <a href="#" class="banner-title">
+                        <h1 class="text-center"><span class=" fs-3">06.</span>Doble Erre</h1>
+                        <img src="images/project6.jpg" alt="img-cover" class="follow-img">
+                    </a>
+
+                </div>
+            </div>
+
+        </section>
+
+        <!-- connections  -->
+        <section class="connections section-container my-5 py-5 ">
+            <div class="row my-5 py-5 flex-column-reverse flex-md-row">
+                <div class="col-12 col-md-6 ">
+                    <h3 class="connection-title">Connections
+                        are what we do best</h3>
+                    <p class="connection-description py-5">
+                        Connecting clients with their customers is the key to success, and we do it through a series of
+                        design services.
+                    </p>
+                    <a href="#" class="text-decoration-none text-dark">
+                        <div class="our-service hover-rotete">
+                            <p class="shot-services-title m-0 pt-3">OUR SERVICES</p>
+                            <h4 class="service-title">A deep dive into our client’s needs
+
+                            </h4>
+                            <p class="service-description connection-description py-5 pe-0">Branding Identity / Naming /
+                                Packaging / Web Design / Creative &
+                                Art Direction / Production Planning / Brand Photography / Editorial
+                                Design / Social Media Design</p>
+                            <div class="hover-roteted d-flex gap-5 align-items-center">
+                                <div
+                                    class="cricle-read-more position-relative d-flex align-items-center justify-content-center">
+                                    <img src="images/svg/svgexport-4.svg" alt="" class="position-absolute img-fluid">
+                                    <img src="images/svg/Read more.svg" alt="" class="img-fluid read-more">
+
+                                </div>
+                                <div class="arrow-icon-left">
+                                    <img src="images/svg/svgexport-8.svg" alt="" class="img-fluid">
+                                </div>
+                            </div>
+
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-6">
+                    <img src="images/service-home-page.png" class="img-fluid connection-service-img ms-md-5 ms-0 py-5" alt="">
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-dark text-white ">
+        <!-- place footer here -->
+        <div class="section-container">
+            <p class="footer-title">BASED IN GUATEMALA, WORKING WORLDWIDE<br>
+                GT LOCAL TIME: SAT 12:49 PM</p>
+            <div class="footer-menu d-flex align-items-center" >
+                <div class="sitemap me-5">
+                    <p class="fs-5">SITEMAP</p>
+                    <ul class="row row-cols-2 m-0 p-0">
+                        <li class="list-group-item"><a href="#" class="text-decoration-none text-white">HOME</a></li>
+                        <li class="list-group-item"><a href="#" class="text-decoration-none text-white">ABOUT</a></li>
+                        <li class="list-group-item"><a href="#" class="text-decoration-none text-white">WORK</a></li>
+                        <li class="list-group-item"><a href="#" class="text-decoration-none text-white">SERVICES</a></li>
+                        <li class="list-group-item"><a href="#" class="text-decoration-none text-white">CONTACT</a></li>
+                    </ul>
+
+                </div>
+                <div class="sitemap">
+                    <p class="fs-5">SOCIAL</p>
+                    <ul class="row row-cols-2 m-0 p-0">
+                        <li class="list-group-item"><a href="#" class="text-decoration-none text-white">INSTAGRAM</a></li>
+                        <li class="list-group-item"><a href="#" class="text-decoration-none text-white">BEHANCE</a></li>
+                        <li class="list-group-item"><a href="#" class="text-decoration-none text-white">LINKEDIN</a></li>
+                        <li class="list-group-item"><a href="#" class="text-decoration-none text-white">PINTEREST</a></li>
+                        <li class="list-group-item"><a href="#" class="text-decoration-none text-white">TWITTER</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="get-in-touch">
+                <h4>GET IN TOUCH</h4>
+            </div>
+            <div class="copyright footer-title my-5">
+                <p>© ANTARA STUDIO 2021</p>
+            </div>
+        </div>
+        
+
+    </footer>
+
+    <script>
+        // For Live Projects
+            window.addEventListener('load', function () {
+                document.querySelector('body').classList.add("loaded")
+            });
+    </script>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+    <!-- custom JavaScript  -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,138 @@
+@media screen and (max-width: 450px) {
+    .overlay a {
+        font-size: 20px
+    }
+
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+
+    .overlay-content a {
+        font-size: 6rem !important;
+    }
+
+
+}
+
+@media screen and (min-width: 767px) {
+    #myNav {
+        display: none !important;
+    }
+
+    .custom-container {
+        padding: 100px 5% 100px 20%;
+    }
+
+    .commited-title {
+        font-size: 4.1666666667vw;
+    }
+
+    .commited-description p {
+        width: 34.475vw;
+        font-size: 1.6rem;
+    }
+
+    .section-title {
+        font-size: 2.2rem;
+    }
+
+    .connection-title {
+        font-size: 4.1666666667vw;
+    }
+
+    .connection-description,
+    .footer-title {
+        font-size: 1.6rem;
+    }
+
+    .service-title {
+        font-size: 4.1666vw;
+        line-height: 1.4;
+
+    }
+
+    .projects-title2 {
+        display: block;
+    }
+
+    .line {
+        margin: 0 6rem;
+    }
+
+    .p {
+        font-size: 1.6rem;
+    }
+
+    .project-description {
+        font-size: 4.1666666667vw;
+    }
+
+
+
+
+}
+
+@media screen and (min-width: 1024px) {
+    .banner-title h1 {
+        font-size: 9.5vw;
+    }
+
+    .scroll-down .scroll-circle {
+        height: 8rem;
+        width: 8rem;
+    }
+
+    .commited-title {
+        font-size: 3.75vw;
+    }
+
+    .commited-description p {
+        width: 22.1625vw;
+        font-size: 1.8rem;
+    }
+
+    .section-title {
+        font-size: 2.5rem;
+    }
+
+    .connection-title {
+        font-size: 3.75vw;
+    }
+
+    .connection-description,
+    .footer-title {
+        font-size: 1.8rem;
+    }
+
+    .service-title {
+        font-size: 1.875vw;
+        line-height: 1.4;
+
+    }
+
+    .get-in-touch h4 {
+        font-size: 9.8vw;
+
+    }
+
+    .p {
+        font-size: 1.8rem;
+    }
+
+    .project-description {
+        font-size: 1.875vw;
+    }
+
+
+}
+
+@media screen and (min-width: 1280px) {
+
+    .scroll-down .scroll-arrow {
+        stroke-width: 1.5;
+        height: 30rem;
+        width: 6rem;
+    }
+}

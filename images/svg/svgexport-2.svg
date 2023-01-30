@@ -1,0 +1,10 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" class="icon" width="52"  height="21" ><defs><symbol id="arrow-back" viewBox="0 0 52 21"><defs></defs>
+    <style>
+      .st1 {
+        fill: none;
+        stroke: #fff;
+        stroke-width: 1.5;
+      }
+    </style><path id="Stroke-1" fill="none" stroke="#FFFFFF" d="M.5 10.5l50.5-.2"></path><path id="Stroke-3" d="M39.5 20s-.3-9.5 11.5-9.8" class="st1" stroke="#FFFFFF" fill="none" stroke-width="1.5px"></path><path id="Stroke-5" d="M39.5.3s-.3 9.5 11.5 9.8" class="st1" stroke="#FFFFFF" fill="none" stroke-width="1.5px"></path></symbol></defs>
+          <use xlink:href="#arrow-back" fill="#FFFFFF"></use>
+        </svg>
